@@ -63,7 +63,7 @@ public class PreferenceActivity extends Activity {
 		
 		// set the image size
 		MjpegView.setImageSize( Integer.parseInt( width), Integer.parseInt(height));
-		
+
 		// launch MjpegActivity
 		Intent intent = new Intent( this, MjpegActivity.class);
 		intent.putExtra( KEY_HOSTNAME, hostname);
