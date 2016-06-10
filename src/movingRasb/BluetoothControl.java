@@ -14,14 +14,14 @@ import android.bluetooth.BluetoothSocket;
 public class BluetoothControl {
 	protected static String MAC = "B8:27:EB:8D:1A:37";// BF:C1:B0";
 	private BluetoothSocket mmSocket;
-	private final String OWNER = "Maciek";
+	private final String OWNER = "Sewelyn";
 	private final BluetoothDevice mmDevice;
 	protected PrintWriter out;
 	protected BufferedReader bReader;
 	public static boolean connected;
 
 	public BluetoothControl(String MAC) {
-		MAC = OWNER.equals("Maciek") ? "B8:27:EB:8D:1A:37" : "B8:27:EB:BF:C1:B0";
+		MAC = OWNER.equals("Maciek") ? "B8:27:EB:8D:1A:37" : "B8:27:EB:84:5A:16";
 		// this.MAC=MAC;
 		BluetoothAdapter ba = BluetoothAdapter.getDefaultAdapter();
 		mmDevice = ba.getRemoteDevice(MAC);

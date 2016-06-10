@@ -189,6 +189,7 @@ public class MjpegActivity extends Activity {
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_UP) {
 					moveRobot.dontMove();
+					lastmove="STAY";
 					return false;
 				}
 				return false;
